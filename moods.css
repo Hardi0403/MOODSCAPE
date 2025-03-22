@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Thematic Modes */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.neon-dreams {
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+/* Splash Screen Styling */
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    z-index: 100;
+}
+
+/* Particle Background */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Quiz Card Styling */
+.quiz-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px rgba(255, 154, 158, 0.5);
+    transform: translateY(-3px) scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Align Playlist Result */
+#playlistResult {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .theme-switcher {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodscape</title>
+    <link rel="stylesheet" href="moods.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1>Moodscape</h1>
+        <p>Find the perfect playlist for your vibe ✨</p>
+        <button id="skip-button">Start</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" style="display: none;">
+        <header>
+            <h1>Moodscape</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <button id="light-mode">Light Mode</button>
+            <button id="dark-mode">Dark Mode</button>
+            <button id="neon-dreams">Neon Dreams</button>
+        </div>
+
+        <!-- Questionnaire -->
+        <main>
+            <section id="questionnaire" class="quiz-card">
+                <h2>Find Your Perfect Playlist</h2>
+                <div class="question">
+                    <label for="mood">Mood rn? Spill the tea:</label>
+                    <select id="mood">
+                        <option value="vibing">Living my best life ✨</option>
+                        <option value="sos">Feeling kinda sus 🤨</option>
+                        <option value="mid">It's a vibe 🎧</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="activity">Currently engaged in:</label>
+                    <select id="activity">
+                        <option value="doomscrolling">Doomscrolling on the FYP 📱</option>
+                        <option value="living">Manifesting my dreams ✨</option>
+                        <option value="feels">Catching flights, not feelings ✈️</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="lyrics-vibes">Lyrics or vibes?</label>
+                    <select id="lyrics-vibes">
+                        <option value="lyrics">I need those bangers 🎤</option>
+                        <option value="vibes">Just the vibes 🎧</option>
+                    </select>
+                </div>
+                <button id="next-btn">Next</button>
+            </section>
+
+            <section id="playlistResult" class="quiz-card" style="display: none;">
+                <h2>Your Playlist:</h2>
+                <div id="spotifyEmbed"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Moodscape</p>
+        </footer>
+    </div>
+
+    <script src="moods.js"></script>
+</body>
+</html>
